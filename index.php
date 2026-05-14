@@ -542,7 +542,8 @@ Inventario
 </li>
 
 <li>
-<a href="#" onclick="mostrarPanelAdmin()">
+<a href="#"
+onclick="mostrarPanelAdmin()">
 Administración de Stock
 </a>
 </li>
@@ -584,7 +585,8 @@ productos cosméticos en tiempo real.
 
 <div class="hero-botones">
 
-<a href="#inventario" class="btn-hero">
+<a href="#inventario"
+class="btn-hero">
 Ver Inventario
 </a>
 
@@ -622,10 +624,6 @@ id="contenedorProductos">
 </div>
 
 </section>
-
-<!-- ========================= -->
-<!-- PANEL ADMIN -->
-<!-- ========================= -->
 
 <section class="panel-admin"
 id="panelAdmin">
