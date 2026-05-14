@@ -1,26 +1,23 @@
 <?php
 
-$serverName = "localhost\\SQLEXPRESS";
+$host = "sql5.freesqldatabase.com";
 
-$connectionOptions = array(
+$usuario = "sql5826887";
 
-    "Database" => "EasyBeauty",
-    "TrustServerCertificate" => true
+$password = "sdAucDGhT3";
 
+$bd = "sql5826887";
+
+$conn = mysqli_connect(
+    $host,
+    $usuario,
+    $password,
+    $bd
 );
 
-$conn = sqlsrv_connect(
-    $serverName,
-    $connectionOptions
-);
+if(!$conn){
 
-if($conn){
-
-    echo "Conexión exitosa";
-
-}else{
-
-    die(print_r(sqlsrv_errors(), true));
+    die("Error de conexión: " . mysqli_connect_error());
 
 }
 
