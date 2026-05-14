@@ -4,17 +4,10 @@ include("conexion.php");
 
 $id = $_POST['id'];
 
-$sql = "DELETE FROM productos WHERE id = ?";
+$sql = "DELETE FROM productos
+WHERE id='$id'";
 
-$params = array($id);
-
-$query = sqlsrv_query(
-    $conn,
-    $sql,
-    $params
-);
-
-if($query){
+if(mysqli_query($conn, $sql)){
 
     echo "Producto eliminado";
 
